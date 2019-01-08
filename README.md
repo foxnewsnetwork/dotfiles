@@ -1,3 +1,10 @@
+# Thomas Chen's Linux Dotfiles
+
+- [x] add in `git recent`
+- [ ] check rest of this
+
+Forked Mathias's
+
 # Mathias’s dotfiles
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
