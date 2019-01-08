@@ -3,6 +3,29 @@
 - [x] add in `git recent`
 - [ ] check rest of this
 
+# Problems Encountered Journal
+
+## Git commit GPG Error
+
+While attempting to commit, I ran into the following console error:
+
+```sh
+bear@BuyHighSellLow:~/Documents/Github/dotfiles$ git commit
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+This happens because I had not setup my `gpg` key yet, and for some reason, git (as of version `2.17.1`) now demands a gpg key to sign commits.
+
+I resolved this by doing
+
+```sh
+gpg --key-gen
+```
+
+As per stackoverflow recommendation [here](https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data), however it might also be possible to turn off commit signing via config option in git (haven't explored this yet, though)
+
+
 Forked Mathias's
 
 # Mathias’s dotfiles
